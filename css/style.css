@@ -129,7 +129,7 @@ body {
 
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1121px) {
     .wrapper {
         width: 1200px;
     }
@@ -323,49 +323,6 @@ body {
         border-radius: 10px;
     }
 
-    .check__feed::after {
-        width: 40px;
-        height: 40px;
-        content: '';
-        display: block;
-        background-image: url('/img/main/repair.png');
-        position: absolute;
-        top: 43px;
-        right: -80px;
-    }
-
-    .check__status::after {
-        width: 40px;
-        height: 40px;
-        content: '';
-        display: block;
-        background-image: url('/img/main/checkstatus.png');
-        position: absolute;
-        right: -280px;
-        top: 43px;
-    }
-
-    .main__title::before {
-        display: block;
-        content: '';
-        width: 4px;
-        height: 40px;
-        background-image: url('/img/main/highlight.svg');
-        position: absolute;
-        left: 0;
-    }
-
-    .content__link::before {
-        content: '';
-        display: block;
-        width: 16px;
-        height: 11px;
-        background-image: url('/img/main/icon.svg');
-        background-repeat: no-repeat;
-        position: absolute;
-        left: 34px;
-        top: 302px;
-    }
 
 }
 
