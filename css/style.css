@@ -57,7 +57,7 @@ body {
     justify-content: space-around;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
 
     .wrapper {
         width: 320px;
@@ -80,7 +80,7 @@ body {
     }
 }
 
-@media (min-width: 321px) and (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 1120px) {
 
     .wrapper {
         width: 768px;
@@ -129,7 +129,7 @@ body {
 
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1201px) {
     .wrapper {
         width: 1200px;
     }
