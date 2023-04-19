@@ -186,7 +186,7 @@ body {
 }
 
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 768px) {
 
     .content__link::before {
         content: '';
@@ -278,7 +278,7 @@ body {
     }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1121px) {
     .main {
         padding: 42px 32px;
     }
