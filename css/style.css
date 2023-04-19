@@ -103,16 +103,15 @@ body {
         width: 178px;
     }
 
-    .burger::after {
+    .header__left::before {
         content: '';
         display: block;
         width: 2px;
         height: 32px;
         background-image: url("/img/header/divider.svg");
         background-color: #EAEAEA;
-        position: absolute;
-        left: 80px;
-        top: 40px;
+        position: relative;
+        left: 70px;
     }
 
     .header__communication::after {
@@ -188,6 +187,11 @@ body {
 
 @media (min-width: 320px) and (max-width: 768px) {
 
+    .main-top,
+    .content__link {
+        position: relative;
+    }
+
     .content__link::before {
         content: '';
         display: block;
@@ -196,18 +200,21 @@ body {
         background-image: url('/img/main/icon.svg');
         background-repeat: no-repeat;
         position: absolute;
-        left: 25px;
-        top: 502px;
+        left: 10px;
+        top: 22px;
     }
     
-    .main__title::before {
+
+    .main-top::before {
         display: block;
         content: '';
         width: 4px;
         height: 40px;
         background-image: url('/img/main/highlight.svg');
+        background-repeat: no-repeat;
         position: absolute;
-        left: 0;
+        margin-right: 0;
+        left: -14px;
     }
 
     .content__img {
@@ -241,14 +248,19 @@ body {
         display: flex;
     }
 
-    .main__title::before {
+    .main-top,
+    .content__link {
+        position: relative;
+    }
+
+    .main-top::before {
         display: block;
         content: '';
         width: 4px;
         height: 40px;
         background-image: url('/img/main/highlight.svg');
         position: absolute;
-        left: 0;
+        left: -20px;
     }
 
     .content__link::before {
@@ -259,8 +271,8 @@ body {
         background-image: url('/img/main/icon.svg');
         background-repeat: no-repeat;
         position: absolute;
-        left: 30px;
-        top: 492px;
+        left: 10px;
+        top: 20px;
     }
 
     .content__form {
@@ -296,6 +308,11 @@ body {
     .check__feed,
     .check__status {
         font-size: 16px;
+        position: relative;
+    }
+
+    .content__link {
+        position: relative;
     }
 
     .check__feed {
@@ -323,6 +340,42 @@ body {
         border-radius: 10px;
     }
 
+    
+    .check__feed::before {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-image: url('/img/main/repair.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 140px; 
+        top: -12px;
+    }
+
+    .check__status::before {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-image: url('/img/main/checkstatus.png');
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 140px; 
+        top: -12px;
+    }
+
+    .content__link::before {
+        content: '';
+        display: block;
+        width: 16px;
+        height: 11px;
+        background-image: url('/img/main/icon.svg');
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 10px;
+        top: 22px;
+    }
 
 }
 
