@@ -13,6 +13,14 @@ li {
     list-style-type: none; 
 }
 
+a:active, 
+a:hover,  
+a {
+  text-decoration: none;
+  border-bottom: none; 
+  color: #666;
+}
+
 ul {
     padding-left: 0;
 }
@@ -145,7 +153,7 @@ body {
     background-color: #F8F8F8;
 }
 
-.main__title {
+.main-header__title {
     font-weight: bold;
     font-size: 28px;
     line-height: 40px;
@@ -162,12 +170,12 @@ body {
     display: none;
   }
 
-.main-nav__button {
+.main-nav__link {
     padding: 8px 16px;
     font-size: 16px;
 }
 
-.main-nav__button--active {
+.main-nav__link--active {
     background: #FFFFFF;
     border: 2px solid #B8FFEC;
     border-radius: 6px;
@@ -187,7 +195,7 @@ body {
 
 @media (min-width: 320px) and (max-width: 768px) {
 
-    .main-top,
+    .main-header__top,
     .content__link {
         position: relative;
     }
@@ -205,7 +213,7 @@ body {
     }
     
 
-    .main-top::before {
+    .main-header__top::before {
         display: block;
         content: '';
         width: 4px;
@@ -229,7 +237,7 @@ body {
         display: none;
     }
     
-    .main__title {
+    .main-header__title {
         padding-bottom: 24px;
     }
 }
@@ -239,7 +247,7 @@ body {
         padding: 24px;
     }
 
-    .main__title,
+    .main-header__title,
     .main-nav {
         margin-bottom: 32px;
     }
@@ -248,12 +256,12 @@ body {
         display: flex;
     }
 
-    .main-top,
+    .main-header__top,
     .content__link {
         position: relative;
     }
 
-    .main-top::before {
+    .main-header__top::before {
         display: block;
         content: '';
         width: 4px;
@@ -295,13 +303,13 @@ body {
         padding: 42px 32px;
     }
 
-    .main-top {
+    .main-header__top {
         display: flex; 
         align-items: center;  
         margin-bottom: 10px;    
     }
 
-    .main__title {
+    .main-header__title {
         margin-right: auto;
     }
 
@@ -311,7 +319,8 @@ body {
         position: relative;
     }
 
-    .content__link {
+    .content__link,
+    .main-header__top {
         position: relative;
     }
 
@@ -340,7 +349,7 @@ body {
         border-radius: 10px;
     }
 
-    
+/*  
     .check__feed::before {
         content: '';
         display: block;
@@ -364,6 +373,7 @@ body {
         left: 140px; 
         top: -12px;
     }
+*/
 
     .content__link::before {
         content: '';
@@ -376,6 +386,19 @@ body {
         left: 10px;
         top: 22px;
     }
+
+    .main-header__top::before {
+        content: "";
+        display: block;
+        width: 4px;
+        height: 40px;
+        background-image: url(/img/main/highlight.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        left: -30px;
+    }
+
+
 
 }
 
