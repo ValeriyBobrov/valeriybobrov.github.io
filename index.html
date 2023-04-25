@@ -1,87 +1,103 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="/fonts/stylesheet.css">
-        <link rel="stylesheet" href="/css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="UTF-8">
-        <title>Учебный проект</title>
-    </head>
-    <body>
-        <div class="wrapper">
-            <header class="header">
-                <div class="header__left">
-                    <button class="header__button burger">
-                        <img src="/img/header/burger.svg" alt="боговое меню">
-                    </button>
-                    <div class="header__logo">
-                        <img src="/img/header/logo.svg" alt="логотив">
-                    </div>
+
+<head>
+    <link rel="stylesheet" href="/fonts/stylesheet.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Учебный проект</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__left">
+                <button class="header__button burger">
+                    <img src="/img/header/burger.svg" alt="боговое меню">
+                </button>
+                <div class="header__logo">
+                    <img src="/img/header/logo.svg" alt="логотив">
                 </div>
-                <div class="header__communication">
-                    <button class="header__button">
-                        <img src="/img/header/phone.svg" alt="телефон">
+            </div>
+            <div class="header__communication">
+                <button class="header__button">
+                    <img src="/img/header/phone.svg" alt="телефон">
+                </button>
+                <button class="header__button">
+                    <img src="/img/header/chat.svg" alt="чат">
+                </button>
+                <button class="header__button">
+                    <img src="/img/header/man.svg" alt="менеджер">
+                </button>
+            </div>
+            <nav class="header__nav navigation">
+                <button class="header__button navigation__item1">
+                    <img src="/img/header/repear.svg" alt="ремонт">
+                </button>
+                <button class="header__button navigation__item2">
+                    <img src="/img/header/search.svg" alt="#">
+                </button>
+            </nav>
+        </header>
+
+        <main class="main">
+            <header class="main-header">
+                <div class="main-header__top">
+                    <h1 class="main-header__title">Услуги и сервисы</h1>
+                    <button class="check__feed main-header__button">
+                        Оставить заявку
+                        <div class="main-header__icon">
+                            <img src="/img/main/repear.svg" alt="">        
+                        </div>    
                     </button>
-                    <button class="header__button">
-                        <img src="/img/header/chat.svg" alt="чат">
-                    </button>
-                    <button class="header__button">
-                        <img src="/img/header/man.svg" alt="менеджер">
+                    <button class="check__status main-header__button">
+                        Статус ремонта
+                        <div class="main-header__icon">
+                            <img src="/img/main/checkstatus.svg" alt="">
+                        </div>
                     </button>
                 </div>
-                <nav class="header__nav navigation">
-                    <button class="header__button navigation__item1">
-                        <img src="/img/header/repear.svg" alt="ремонт">
-                    </button>
-                    <button class="header__button navigation__item2">
-                        <img src="/img/header/search.svg" alt="#">
-                    </button>
-                </nav>
             </header>
-            
-            <main class="main">
-                <header class="main-header">
-                    <div class="main-header__top">
-                        <h1 class="main-header__title">Услуги и сервисы</h1>
-                            <button class="check__feed main-header__button">
-                                Оставить заявку
-                            </button>
-                            <button class="check__status main-header__button">
-                                Статус ремонта
-                            </button>
-                    </div>
-                </header>
-                    <ul class="main-nav">
-                        <li class="main-nav__link main-nav__link--active">
-                            <a href="">Ремонтируемые бренды</a></li>
-                        <li class="main-nav__link">
-                            <a href="">Ремонтируемые устройства</a></li>
-                        <li class="main-nav__link">
-                            <a href="">Цены на услуги</a></li>
-                        <li class="main-nav__link">
-                            <a href="">Адреса сервисных центров</a></li>
-                        <li class="main-nav__link">
-                            <a href="">Специальные цены</a>
-                        </li>
-                        <li class="main-nav__link">
-                            <a href="">Отзывы</a>
-                        </li>
-                    </ul>
-                <article class="content">
-                    <div class="content__form">
-                        <p class="content__text">
-                            Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                        </p>
-                        <p class="content__text">
-                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-                        </p>
-                        <button class="content__link">
-                            Читать далее
-                        </button>
-                    </div>
-                    <img class="content__img" src="/img/main/img.jpg" alt="Фотография помещения">
-                </article>
-            </main>
-        </div>
-    </body>
+            <ul class="main-nav">
+                <li class="main-nav__link main-nav__link--active">
+                    <a href="">Ремонтируемые бренды</a>
+                </li>
+                <li class="main-nav__link">
+                    <a href="">Ремонтируемые устройства</a>
+                </li>
+                <li class="main-nav__link">
+                    <a href="">Цены на услуги</a>
+                </li>
+                <li class="main-nav__link">
+                    <a href="">Адреса сервисных центров</a>
+                </li>
+                <li class="main-nav__link">
+                    <a href="">Специальные цены</a>
+                </li>
+                <li class="main-nav__link">
+                    <a href="">Отзывы</a>
+                </li>
+            </ul>
+            <article class="content">
+                <div class="content__form">
+                    <p class="content__text">
+                        Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+                        отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                    </p>
+                    <p class="content__text">
+                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
+                        большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                        и, в свою очередь, советуют нас родным и близким.
+                    </p>
+                    <button class="content__link">
+                        Читать далее
+                    </button>
+                </div>
+                <img class="content__img" src="/img/main/img.jpg" alt="Фотография помещения">
+            </article>
+        </main>
+    </div>
+</body>
+
 </html>
