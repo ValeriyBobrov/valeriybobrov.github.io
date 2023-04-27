@@ -373,7 +373,7 @@ body {
         left: 140px; 
         top: -12px;
     }
-*/
+
 
     .main-header__icon {
         display: inline-block;
@@ -389,6 +389,34 @@ body {
         position: absolute;
         right: 10px;
         top: 10px;
+    }
+*/
+
+    .main-header__button {
+        font-weight: 500;
+    }
+
+    .btn {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: #FF3E79;
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+
+
+    .btn-repear {
+        background-image: url(/img/main/repear.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        margin-right: 30px;
+    }
+
+    .btn-check {
+        background-image: url(/img/main/checkstatus.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
     }
 
     .content__link::before {
