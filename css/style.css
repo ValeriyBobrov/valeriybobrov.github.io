@@ -423,16 +423,20 @@ body {
 /* ASIDE MENU */
 
 .aside-body {
-    position: absolute;
     top: 0;
     left:0;
     width: 320px;
     font-color: #1B1C21;
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    height: 100vh;
 }
+
 
 .aside {
     padding: 24px;
+    display: flex;
+    flex-direction: column;
+    height: 94%;
 }
 
 .aside__header {
@@ -466,6 +470,7 @@ body {
     opacity: 0.5;
 }
 
+
 .aside-menu {
     display: flex;
     flex-direction: column; 
@@ -484,6 +489,7 @@ body {
     opacity: 0.7;
 }
 
+
 .aside-nav__item--active::before {
     content: "";
     position: absolute;
@@ -499,13 +505,10 @@ body {
 }
 
 
-.aside-nav__item:last-of-type {
-    margin-bottom: 260px;
-}
-
 .aside-footer {
     display: flex;
     flex-direction: column;
+    margin-top: auto;
 }
 
 .aside-footer__communication {
