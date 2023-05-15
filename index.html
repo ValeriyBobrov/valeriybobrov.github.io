@@ -5,60 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Боковое меню</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>Document</title>
 </head>
-<body class="aside-body">
-    <aside class="aside">
-        <header class="aside__header">
-            <button class="aside__button">
-                <img src="/img/aside/close.svg" alt="Закрыть">
-            </button>
-            <img class="aside__logo" src="/img/aside/logo.svg" alt="Логотип">
-            <button class="aside__button">
-                <img src="/img/aside/search.svg" alt="Поиск">
-            </button>
-        </header>
-        <nav class="aside-nav">
-            <ul class="aside-menu">
-                <li class="aside-nav__item aside-nav__item--active"><a>Ремонт техники</a></li>
-                <li class="aside-nav__item"><a>Услуги и сервисы</a></li>
-                <li class="aside-nav__item"><a>Корпоративным клиентам</a></li>
-                <li class="aside-nav__item"><a>Продавцам техники</a></li>
-                <li class="aside-nav__item"><a>Партнерам</a></li>
-                <li class="aside-nav__item"><a>Производителям</a></li>
-                <li class="aside-nav__item"><a>Наши сервисные центры</a></li>
-                <li class="aside-nav__item"><a>Контакты</a></li>
-            </ul>
-        </nav>
-        <footer class="aside-footer">
-            <div class="aside-footer__communication">
-                <button class="aside__button aside-footer__button">
-                    <img src="/img/aside/phone.svg" alt="Телефон">
-                </button>
-                <button class="aside__button aside-footer__button">
-                    <img src="/img/aside/chat.svg" alt="Чат">
-                </button>
-                <button class="aside__button aside-footer__button">
-                    <img src="/img/aside/man.svg" alt="Техническая поддержка">
-                </button>
+<body>
+    <h1 class="title">
+        Ремонт техники различных брендов
+    </h1>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><div class="swiper-slide-item"><img src="/img/acer.png" alt=""></div>
             </div>
-            <a class="aside__link-email" href="mailto:mail@cps.com">mail@cps.com</a>
-            <a class="aside__link-phone" href="tel:+78008908900">8 800 890 8900</a>
-            <div class="aside__lang">
-                <label class="checkbox">
-                    <input class="check" type="radio" name="lang" value="Russian">
-                    <span>RU</span>
-                </label>
-                <label class="checkbox">
-                    <input class="check" type="radio" name="lang" value="English">
-                    <span>EN</span>
-                </label>
-                <label class="checkbox">
-                    <input class="check" type="radio" name="lang" value="Chine">
-                    <span>CH</span>
-                </label>
+                <div class="swiper-slide"><div class="swiper-slide-item"><img src="/img/apple.png" alt=""></div>
             </div>
-        </footer>
-    </aside>
+                <div class="swiper-slide"><div class="swiper-slide-item"><img src="/img/boshe.png" alt=""></div>
+            </div>
+                <div class="swiper-slide"><div class="swiper-slide-item"><img src="/img/hp.png" alt=""></div>
+            </div>
+                <div class="swiper-slide"><div class="swiper-slide-item"><img src="/img/lenova.png" alt=""></div>
+            </div>
+                <div class="swiper-slide"><div class="swiper-slide-item"><img src="/img/samsung.png" alt=""></div>
+            </div>
+                <div class="swiper-slide"><div class="swiper-slide-item"><img src="/img/sony.png" alt=""></div>
+            </div>
+                <div class="swiper-slide"><div class="swiper-slide-item"><img src="/img/vewsonic.png" alt=""></div>
+            </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="list-service">
+            <div class="list-service__item"><img src="/img/acer.png" alt=""></div>
+            <div class="list-service__item"><img src="/img/apple.png" alt=""></div>
+            <div class="list-service__item"><img src="/img/boshe.png" alt=""></div>
+            <div class="list-service__item"><img src="/img/hp.png" alt=""></div>
+            <div class="list-service__item"><img src="/img/lenova.png" alt=""></div>
+            <div class="list-service__item"><img src="/img/samsung.png" alt=""></div>
+            <div class="list-service__item"><img src="/img/sony.png" alt=""></div>
+            <div class="list-service__item"><img src="/img/vewsonic.png" alt=""></div>
+            <div class="list-service__item  list-service__item--hidden"><img src="/img/acer.png" alt=""></div>
+            <div class="list-service__item  list-service__item--hidden"><img src="/img/apple.png" alt=""></div>
+            <div class="list-service__item  list-service__item--hidden"><img src="/img/boshe.png" alt=""></div>
+        </div>
+        <button class="buttonClose">Показать все</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
