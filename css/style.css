@@ -136,6 +136,10 @@ body {
         border-radius: 6px;
     }
 
+    .swiper-slide-item {
+        width: 100%;
+    }
+
     .swiper-wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -189,6 +193,10 @@ body {
         width: 240px !important;
         border-radius: 6px;
         box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    }
+
+    .swiper-slide-item {
+        width: 100%;
     }
 
     .swiper-wrapper {
