@@ -1,0 +1,10 @@
+@import './libs/normalize.css';
+@import './style/var.scss';
+
+
+
+div {
+    background-color: $text;
+    user-select: none;
+}
+
