@@ -128,6 +128,7 @@ callbackBtn.addEventListener('click', function() {
 
 callbackBtnClose.addEventListener('click', function () {
     callbackForm.classList.remove('callback-active');
+    callbackForm.classList.remove('callback-active-plan');
     overlay.classList.remove('overlay-active');
 })
 
@@ -144,6 +145,25 @@ feedbackBtn.addEventListener('click', function() {
 
 feedbackBtnClose.addEventListener('click', function () {
     feedbackForm.classList.remove('feedback-active');
+    feedbackForm.classList.remove('feedback-active-plan');
     overlay.classList.remove('overlay-active');
 })
+
+// callback планшет
+
+let headerBtnCallback = document.querySelector('.social__phone');
+
+headerBtnCallback.addEventListener('click', function() {
+    callbackForm.classList.add('callback-active-plan');
+    overlay.classList.add('overlay-active');
+});
+
+//feedback план
+
+let headerBtnFeedback = document.querySelector('.social__chat');
+
+headerBtnFeedback.addEventListener('click', function() {
+    feedbackForm.classList.add('feedback-active-plan');
+    overlay.classList.add('overlay-active');
+});
 
