@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="overlay">
     <div class="wrapper">
         <header class="header header-main">
             <nav class="header-list">
@@ -273,6 +274,7 @@
             <a href="#" class="footer__item">Информация, размещенная на данной странице, не является публичной офертой</a>
         </footer>
     </div>
+    </div>
     <aside class="aside">
         <div class="aside-wrapper">
             <header class="aside-header">
@@ -329,5 +331,34 @@
             </div>
         </div>
     </aside>
+    <div class="feedback">
+        <button class="feedback__btn">
+            <img src="./img/aside/close.svg" alt="">
+        </button>
+        <h2 class="feedback__title">Обратная связь</h2>
+        <form class="feedback-form" action="#" method="post">
+            <input class="feedback-form__input name" name="name" type="text" placeholder="Имя">
+            <input class="feedback-form__input tel" name="tel" type="text" placeholder="Телефон">
+            <input class="feedback-form__input email" name="email" type="text" placeholder="Электронная почта">
+            <textarea class="feedback-form__input message" name="message" type="text" placeholder="Сообщение" rows="4"></textarea>
+            <p class="feedback-form__text">
+                Нажимая “отправить”, вы даете согласие на <span class="alert">обработку персональных данных</span> и соглашаетесь с нашей <span class="alert">политикой конфиденциальности</span>
+            </p>
+            <button class="feedback-form__btn" type="submit">Отправить</button>
+        </form>
+    </div>
+    <div class="callback">
+        <button class="callback__btn">
+            <img src="./img/aside/close.svg" alt="">
+        </button>
+        <h2 class="callback__title">Заказать Звонок</h2>
+        <form class="callback-form">
+            <input class="callback-form__input" type="text" name="tel" placeholder="Телефон">
+            <p class="callback-form__text">
+                Нажимая “отправить”, вы даете согласие на <span class="alert">обработку персональных данных</span> и соглашаетесь с нашей <span class="alert">политикой конфиденциальности</span>
+            </p>
+            <button class="callback-form__btn">Отправить</button>
+        </form>
+    </div>
 </body>
 </html>

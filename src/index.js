@@ -1,3 +1,4 @@
+import { doc } from 'prettier';
 import './index.html';
 import './index.scss';
 import Swiper from 'swiper/bundle';
@@ -96,11 +97,53 @@ btnBrends.addEventListener('click', function() {
 let burgerOpen = document.querySelector('.header-list__burger');
 let aside = document.querySelector('.aside');
 let burgerClose = document.querySelector('.aside-header__close');
+let overlay = document.querySelector('.overlay');
+
+// burger
 
 burgerOpen.addEventListener('click', function() {
     aside.classList.add('aside-open');
+    overlay.classList.add('overlay-active');
 });
 
 burgerClose.addEventListener('click', function() {
     aside.classList.remove('aside-open');
+    overlay.classList.remove('overlay-active');
 });
+
+let hideOverlay = function () {
+    overlay.classList.remove('overlay-active');
+}
+
+// callback
+
+let callbackForm = document.querySelector('.callback');
+let callbackBtn = document.querySelector('.aside-social__phone');
+let callbackBtnClose = document.querySelector('.callback__btn');
+
+callbackBtn.addEventListener('click', function() {
+    callbackForm.classList.add('callback-active');
+    overlay.classList.add('overlay-active');
+});
+
+callbackBtnClose.addEventListener('click', function () {
+    callbackForm.classList.remove('callback-active');
+    overlay.classList.remove('overlay-active');
+})
+
+// feedback
+
+let feedbackForm = document.querySelector('.feedback');
+let feedbackBtn = document.querySelector('.aside-social__chat');
+let feedbackBtnClose = document.querySelector('.feedback__btn');
+
+feedbackBtn.addEventListener('click', function() {
+    feedbackForm.classList.add('feedback-active');
+    overlay.classList.add('overlay-active');
+});
+
+feedbackBtnClose.addEventListener('click', function () {
+    feedbackForm.classList.remove('feedback-active');
+    overlay.classList.remove('overlay-active');
+})
+
