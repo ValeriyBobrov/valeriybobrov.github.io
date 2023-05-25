@@ -1,0 +1,38 @@
+.main-desc {
+    padding: 0 16px 40px 16px;
+    border-bottom: 1px solid $border-color;
+
+    @media (min-width: 768px) and (max-width: 1119px) {
+        padding: 24px;
+        width: 421px;
+    }
+
+    @media (min-width: 1120px) {
+        width: 421px;
+        padding-left: 32px;
+    }
+
+    &__text {
+        font-family: 'TT Lakes Regular';
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &__btn {
+        font-family: 'TT Lakes Medium';
+        font-size: 16px;
+        line-height: 24px;
+
+        position: relative;
+    }
+
+    &__btn::after {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 12px;
+        background-image: url('./img/main/line.svg');
+        top: 7px;
+        right: -15px;
+    }
+}

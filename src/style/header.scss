@@ -1,0 +1,120 @@
+.header-main {
+    border-bottom: solid 1px $border-color;
+
+    @media (max-width:767px) {
+        padding: 18px 16px;
+    }
+
+    @media (min-width: 768px) and (max-width:1119px) {
+        padding: 18px 24px;
+    }
+
+    @media (min-width:1120px) {
+        display: none;
+    }
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+
+
+    &__burger {
+        margin-right: 16px;
+
+        @media (min-width: 768px) and (max-width:1119px) {
+            margin-right: 42px;
+        }
+    }
+
+    .btn {
+        width: 40px;
+        height: 40px;
+        background-color: $btn-color;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transition: opacity 0.1s ease-in;
+    }
+
+    .btn:hover,
+    .btn:active {
+        opacity: 0.5;
+    }
+
+    &__logo {
+        @media (max-width: 767px) {
+            padding-right: 20px;
+            position: relative;
+            margin-right: auto;
+        }
+
+        @media ((min-width: 768px) and (max-width:1119px)) {
+            margin-right: auto;
+        }
+    }
+
+    &__social {
+        @media (max-width: 767px) {
+            display: none;
+        }
+        
+        width: 152px;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 42px;
+        position: relative;
+    }
+
+    &__repear {
+
+        @media (max-width: 767px) {
+            margin-right: 16px;
+        }
+
+        @media (min-width: 768px) and (max-width:1119px) {
+            margin-right: 16px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .header-list__logo::after {
+            content: '';
+            width: 2px;
+            height: 32px;
+            background-image: url('./img/header/divider.svg');
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 15px;
+            right: 3px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width:1119px) {
+        &__burger::after {
+            content: '';
+            width: 2px;
+            height: 32px;
+            background-image: url('./img/header/divider.svg');
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 5px;
+            right: -22px;
+        }
+
+        &__social::after {
+            content: '';
+            width: 2px;
+            height: 32px;
+            background-image: url('./img/header/divider.svg');
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 5px;
+            right: -22px;
+        }
+    }
+
+    
+}
