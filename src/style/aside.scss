@@ -12,11 +12,14 @@
     }
 }
 
+.aside-desk {
+    opacity: 0.3;
+}
+
 .overlay-active {
     height : 100%;
-    width : 100%;
     overflow: hidden;
-    opacity : 50%;
+    opacity : 0.3;
     cursor : pointer;
     z-index: 5;
 }

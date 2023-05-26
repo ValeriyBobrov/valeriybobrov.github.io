@@ -124,12 +124,18 @@ let callbackBtnClose = document.querySelector('.callback__btn');
 callbackBtn.addEventListener('click', function() {
     callbackForm.classList.add('callback-active');
     overlay.classList.add('overlay-active');
+    if (window.innerWidth > 1119) {
+        aside.classList.add('aside-desk');
+    }
 });
 
 callbackBtnClose.addEventListener('click', function () {
     callbackForm.classList.remove('callback-active');
     callbackForm.classList.remove('callback-active-plan');
     overlay.classList.remove('overlay-active');
+    if (window.innerWidth > 1119) {
+        aside.classList.remove('aside-desk');
+    }
 })
 
 // feedback
@@ -141,12 +147,18 @@ let feedbackBtnClose = document.querySelector('.feedback__btn');
 feedbackBtn.addEventListener('click', function() {
     feedbackForm.classList.add('feedback-active');
     overlay.classList.add('overlay-active');
+    if (window.innerWidth > 1119) {
+        aside.classList.add('aside-desk');
+    }
 });
 
 feedbackBtnClose.addEventListener('click', function () {
     feedbackForm.classList.remove('feedback-active');
     feedbackForm.classList.remove('feedback-active-plan');
     overlay.classList.remove('overlay-active');
+    if (window.innerWidth > 1119) {
+        aside.classList.remove('aside-desk');
+    }
 })
 
 // callback планшет
