@@ -101,7 +101,8 @@ let overlay = document.querySelector('.overlay');
 
 // burger
 
-burgerOpen.addEventListener('click', function() {
+burgerOpen.addEventListener('click', function(evt) {
+    evt.stopPropagation();
     aside.classList.add('aside-open');
     overlay.classList.add('overlay-active');
 });
@@ -178,4 +179,12 @@ headerBtnFeedback.addEventListener('click', function() {
     feedbackForm.classList.add('feedback-active-plan');
     overlay.classList.add('overlay-active');
 });
+
+
+document.addEventListener('click', function(event) {
+    if (aside.classList.contains('aside-open') && !aside.contains(event.target)) {
+      aside.classList.remove('aside-open');
+      overlay.classList.remove('overlay-active');
+    }
+  });
 
