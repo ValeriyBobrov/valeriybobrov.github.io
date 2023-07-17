@@ -3,7 +3,15 @@ let searchInput = document.querySelector('.search-input');
 
 let resultDiv = document.querySelector('.result')
 
-searchInput.addEventListener('keyup', ()=> {
+function debounce(func, delay) {
+    let timer;
+    return function() {
+      clearTimeout(timer);
+      timer = setTimeout(func, delay);
+    };
+}
+
+searchInput.addEventListener('keyup', debounce(() => {
     let searchResult = searchInput.value.trim();
 
     if (searchResult === '') {
@@ -13,7 +21,11 @@ searchInput.addEventListener('keyup', ()=> {
 
     fetch (`https://api.github.com/search/repositories?q=${searchResult}&per_page=5`)
     .then(res => {
+        if (!res.ok) {
+            throw new Error(`Ошибка сети ${res.status}`)
+        } else {
         return res.json()
+        }
     })
     .then(data => {
         console.log(data)
@@ -27,6 +39,13 @@ searchInput.addEventListener('keyup', ()=> {
             item.setAttribute('data-rep-name', rep.full_name);
             item.setAttribute('data-rep-lang', rep.language);
             item.setAttribute('data-rep-stars', rep.stargazers_count)
+
+            item.addEventListener('click', () => {
+                searchInput.value = ''
+                while (searchList.firstChild) {
+                    searchList.removeChild(searchList.firstChild);
+                }
+            })
         })
 
         while (searchList.firstChild) {
@@ -68,7 +87,11 @@ searchInput.addEventListener('keyup', ()=> {
             })
         }
     })
-})
+    .catch(error => {
+        console.error(error)
+    })
+}, 400));
+
 
 
 
